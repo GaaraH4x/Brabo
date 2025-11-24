@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>$BRABO | Guardian of Hodlers</title>
+  <meta property="og:title" content="$BRABO - Guardian of Hodlers" />
+  <meta property="og:description" content="CA: FLEXzDThG7qvdipUFZYYbuH5BZ2EGCvsy6oSpZGcpump" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --green: #00ff9d; --dark: #0a0a0a; --smoke: rgba(0,255,157,0.2); }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:#000; color:#fff; font-family:'Rajdhani',sans-serif; overflow-x:hidden; }
+    .hero { min-height:100vh; background:radial-gradient(circle at center, #001a0f, #000); display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; position:relative; }
+    h1 { font-family:'Orbitron',sans-serif; font-size:clamp(4rem,12vw,9rem); background:linear-gradient(90deg,#00ff9d,#00ff41); -webkit-background-clip:text; -webkit-text-fill-color:transparent; text-shadow:0 0 40px var(--green); animation:glow 2s infinite alternate; margin-bottom:10px; }
+    .tagline { font-size:1.4rem; margin:15px 0 25px; opacity:0.9; }
+    .ca { background:rgba(0,255,157,0.15); padding:12px 30px; border:1px solid var(--green); border-radius:50px; cursor:pointer; font-weight:bold; transition:all .3s; }
+    .ca:hover { background:var(--green); color:#000; transform:scale(1.05); }
+
+    /* Animated Buy Widget */
+    #buyWidget { margin:40px auto; width:320px; height:320px; position:relative; cursor:pointer; }
+    #buyCircle { width:100%; height:100%; border:8px solid var(--green); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:2.5rem; font-weight:900; background:radial-gradient(circle,#001a0f,#000); box-shadow:0 0 60px var(--green); animation:pulse 2s infinite; }
+    .smokeBurst { position:absolute; width:100%; height:100%; background:var(--smoke); border-radius:50%; filter:blur(60px); opacity:0; pointer-events:none; animation:burst 1.2s forwards; }
+    @keyframes pulse { 0%,100% { box-shadow:0 0 60px var(--green); } 50% { box-shadow:0 0 100px var(--green); } }
+    @keyframes burst { 0% { transform:scale(0); opacity:0.8; } 100% { transform:scale(3); opacity:0; } }
+    @keyframes glow { from { text-shadow:0 0 30px var(--green); } to { text-shadow:0 0 80px var(--green); } }
+
+    .links { margin:30px 0; display:flex; gap:20px; flex-wrap:wrap; justify-content:center; }
+    .links a { padding:12px 24px; background:rgba(255,255,255,0.05); border:1px solid var(--green); border-radius:50px; text-decoration:none; color:#fff; font-weight:bold; transition:all .3s; }
+    .links a:hover { background:var(--green); color:#000; }
+
+    .chart, .roadmap, .lp { margin:50px auto; width:90%; max-width:900px; }
+    .chart { height:420px; border:2px solid var(--green); border-radius:20px; overflow:hidden; }
+    .lp { text-align:center; padding:40px; background:rgba(0,255,157,0.05); border-radius:20px; }
+    .fire { font-size:4rem; animation:flame 1.5s infinite; }
+    @keyframes flame { 0%,100% { transform:scale(1); } 50% { transform:scale(1.2); } }
+
+    .roadmap h2 { font-size:2.5rem; margin-bottom:30px; }
+    .milestone { background:rgba(255,255,255,0.03); padding:20px; margin:15px; border-radius:15px; border-left:5px solid var(--green); }
+    .done { opacity:0.6; text-decoration:line-through; }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>$BRABO</h1>
+  <p class="tagline">Guardian of hodlers & fallen traders</p>
+  <p style="max-width:700px; opacity:0.8; line-height:1.6;">
+    Brabo is the guardian of hodlers & fallen traders. Born in the bear market, riding feroz through the chaos — Solana warrior protecting the long-term dreamers.
+  </p>
+
+  <div class="ca" onclick="copyCA()">FLEXzDThG7qvdipUFZYYbuH5BZ2EGCvsy6oSpZGcpump</div>
+
+  <!-- Animated Buy Widget -->
+  <div id="buyWidget" onclick="buyBrabo()">
+    <div id="buyCircle">CLICK TO<br>BUY $BRABO</div>
+  </div>
+
+  <div class="links">
+    <a href="https://x.com/Brabocoin_BRABO?t=Ju95kxb5WeXZpsrKe7PFuw&s=09" target="_blank">X / Twitter</a>
+    <a href="https://t.me/therealBrabo" target="_blank">Telegram</a>
+    <a href="https://pump.fun/FLEXzDThG7qvdipUFZYYbuH5BZ2EGCvsy6oSpZGcpump" target="_blank">Pump.fun</a>
+  </div>
+
+  <div class="chart">
+    <iframe src="https://dexscreener.com/solana/FLEXzDThG7qvdipUFZYYbuH5BZ2EGCvsy6oSpZGcpump?embed=1&theme=dark&trades=0" width="100%" height="420" frameborder="0"></iframe>
+  </div>
+
+  <div class="lp">
+    <div class="fire">🔥 LP BURNED FOREVER 🔥</div>
+    <p>100% liquidity burned — no rug possible</p>
+  </div>
+
+  <div class="roadmap">
+    <h2>Roadmap to Valhalla</h2>
+    <div class="milestone done">Phase 1 — Launch & Burn LP</div>
+    <div class="milestone done">Phase 2 — Raid CT & Build Army</div>
+    <div class="milestone">Phase 3 — 100M MC</div>
+    <div class="milestone">Phase 4 — Tier 1 CEX</div>
+    <div class="milestone">Phase 5 — Brabo protects all Solana degens forever</div>
+  </div>
+</div>
+
+<script>
+function copyCA() {
+  navigator.clipboard.writeText("FLEXzDThG7qvdipUFZYYbuH5BZ2EGCvsy6oSpZGcpump");
+  alert("CA copied — go ape $BRABO 🔥");
+}
+function buyBrabo() {
+  const burst = document.createElement("div");
+  burst.classList.add("smokeBurst");
+  document.getElementById("buyWidget").appendChild(burst);
+  setTimeout(() => burst-remove(), 1200);
+  window.open("https://raydium.io/swap/?inputCurrency=sol&outputCurrency=FLEXzDThG7qvdipUFZYYbuH5BZ2EGCvsy6oSpZGcpump", "_blank");
+}
+</script>
+</body>
+</html>
